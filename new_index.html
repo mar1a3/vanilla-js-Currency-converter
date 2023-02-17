@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/new_style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 class="header-title">Check live foreign currency exchange rate</h1>        .
+    </header>
+    <div class="main">
+        <div class="tabs">
+            <div class="tab-convert"> 
+                <img src="./images/convert.png" alt="">
+                Convert
+            </div>
+            <div class="tab-single"> 
+                <img src="./images/single.svg" alt="">
+            Single
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-amount">
+                <label for="amount">Amount</label>
+                <input class="input-amount"
+                 type="text"
+                 placeholder="1.00"
+                 >
+        </div>
+        <div class="form-from">
+            <label for="from">From</label>
+        <select class="select" name="from" id="from" required>
+            <option value="" disabled selected hidden>
+                USD
+        </option>
+    </select>
+</div>
+ <div class="rotonda">
+    <img src="/images/__icon.png" alt="">
+ </div>
+ <div class="form-to">
+    <label for="from">To</label>
+    <select class="select" name="from" id="from" required>
+        <option value="" disabled selected hidden>
+            EUR
+    </option>
+</select>
+ </div>
+        </div>
+
+        <div class="currencies">
+            <div class="differ-cur">
+            <div class="usd-card">
+    <img class="down-pic" src="./images/down arrow.png" alt="">
+            <div class="usd-amount">
+                <p class="cur-name">USD</p>
+                <p class="cur-rate">1.00</p>
+            </div>
+            <div class="cur">American dollar</div>
+            </div>
+            <div class="equeally-pic">
+    <img src="./images/equally.svg" alt="">
+            </div>
+            <div class="eur-card">
+    <img class="down-pic" src="./images/up arrow.png" alt=""">
+            <div class="eur-amount">
+                <p class="cur-name">EUR</p>
+                <p class="cur-rate">0.999</p>
+            </div>
+            <div class="cur">Euro</div>
+            </div>
+        </div>
+    
+        </div>
+        <button class="btn">Convert</button>
+        </div>
+    </div> 
+</div> 
+</body>
+</html>

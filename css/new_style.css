@@ -1,0 +1,196 @@
+*{
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(32, 26, 54);
+    font-family: Inter, Roboto, sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-title{
+  font-size: 20px;
+  margin-top: 70px;
+  margin-bottom: -20px;
+  text-align:center ;
+  color: rgb(255, 255, 255);
+}
+.main{
+  position: relative;
+  margin-top: 20px;
+  width: 800px;
+  height: 300px;
+  background: linear-gradient(180deg, #251c31 0%, rgba(39, 29, 53, 0.2) 100%);
+  backdrop-filter: blur(5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main:after{
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 180px;
+  bottom: 240px;
+  display: block;
+  top: -50px;
+  right: -100px;
+  background: url(/images/efir.png) no-repeat center/contain;
+  z-index: 1;
+}
+.main:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 200px;
+  height: 180px;
+  bottom: 20px;
+  left: -100px;
+  background: url(/images/bitcoin.png) no-repeat center/contain;
+  z-index: -1;
+}
+.tabs{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+.forms{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+label{
+  font-size: 15px;
+  color: rgb(177, 183, 188);
+}
+.form-amount{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-amount{
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+  border: 2px solid rgb(160, 75, 129);
+  font-family: Inter, Roboto, sans-serif;
+  background: rgb(38, 31, 63);
+  height: 45px;
+  width: 200px;
+}
+.forms{
+  margin-top: 40px;
+  gap: 25px;
+}
+.form-from{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rotonda{
+  margin-top: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.rotonda:before{
+  position: absolute;
+  display: block;
+  right: -8px;
+  top: -7px;
+  background-color: rgb(185, 69, 142);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  content: "";
+  z-index: -1;
+  transition: background-color 0.2s ease-in;
+}
+.rotonda:hover:before{
+  background-color: rgb(98, 39, 85);
+}
+.form-to{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.select{
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  background: rgb(38, 31, 63);
+  border: 2px solid rgb(160, 75, 129);
+  color: #ffffff;
+}
+.currencies{
+  color: #fff;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 300px;
+  display: flex;
+}
+.differ-cur{
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+.down-pic{
+  width: 15px;
+  height: 15px;
+}
+.cur{
+  font-size: 15px;
+  color: rgb(144, 144, 164);
+}
+.cur-rate{
+  font-weight: 700;
+}
+.cur-name{
+  margin-bottom:-10px ;
+}
+
+.usd-card{
+  gap: 10px;
+  display: flex;
+}
+.usd-amount{
+  margin-top: -15px;
+}
+.eur-card{
+  gap: 20px;
+  display: flex;
+}
+.eur-amount{
+    margin-top: -15px;
+}
+.btn{
+  font-size: 16px;
+  outline: none;
+  border: none;
+  font-family: Inter, Roboto, sans-serif;
+  background: #e4528a;
+  border-radius: 12px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 30px;
+  margin-left: 580px;
+  transition: background 0.2s ease-in;
+}
+.btn:hover{
+  background-color: #370d29;
+}
+

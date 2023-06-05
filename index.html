@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Check live foreign currency exchange rate</h1>
+    </header>
+       <div class="main">
+            <div class="tabs">
+                <div class="tab active" data-tab="convert">
+                <div class="tab-title"> 
+                    <img src="./images/convert.png" alt="">
+                    Convert
+                </div>
+                </div>
+                <div class="tab" data-tab="single">
+                <div class="tab-title"> 
+                    <img src="./images/single.svg" alt="">
+                Single
+                </div>
+            </div>
+            </div>
+            <div class="forms">
+                <div class="form-amount">
+                    <label for="amount">Amount</label>
+                    <input class="input-amount"
+                     type="text"
+                     placeholder="1.00"
+                     >
+            </div>
+            <div class="form-from">
+                <label for="from">From</label>
+            <select class="select" name="from" id="from" required>
+                <option value="USD" disabled selected hidden>
+                    USD - доллар
+            </option>
+        </select>
+    </div>
+     <div class="rotonda">
+        <img src="./img/converse.png" alt="">
+     </div>
+     <div class="form-to">
+        <label for="from">To</label>
+        <select class="select" name="from" id="to" required>
+            <option value="" disabled selected hidden>
+                EUR
+        </option>
+    </select>
+     </div>
+            </div>
+
+            <div class="currencies">
+                <div class="differ-cur">
+                <div class="usd-card">
+        <img class="down-pic" src="./images/down arrow.png" alt="">
+                <div class="usd-amount">
+                    <p class="cur-name" id="cur-name-down">USD</p>
+                    <p class="cur-rate" id="cur-rate-dollar">1.00</p>
+                </div>
+                <div class="cur">American dollar</div>
+                </div>
+                <div class="equeally-pic">
+        <img src="./images/equally.svg" alt="">
+                </div>
+                <div class="eur-card">
+        <img class="down-pic" src="./images/up arrow.png" alt=""">
+                <div class="eur-amount">
+                    <p class="cur-name" id="cur-name-up">EUR</p>
+                    <p class="cur-rate" id="cur-rate-eur">0.999</p>
+                </div>
+                <div class="cur">Euro</div>
+                </div>
+            </div>
+        
+            </div>
+            <button class="btn">Convert</button>
+        <div class="after-convert">
+            <div class="find-dif">$1 = $0.9</div>
+            <div class="today-data"> Updated <br>18 November 2023</div>
+        </div>
+
+        <div class="convert-footer">
+            <div class="currency-single__item">
+                <div class="currency-n">USD</div>
+                <div class="valuta">American dollar</div>
+                <div class="currency-amount">1.00</div>
+                <div class="btn-change">
+                    <button class="btn-change">Change</button>
+                </div>
+            </div>
+            <div class="currency-list">
+                <div class="currency-eur">EUR</div>
+                <div class="valuta">Euro</div>
+                <div class="currency-amount">0.97</div>
+                <div class="btn-change">
+                    <button class="btn-change">Remove</button>
+                </div>
+            </div>
+            <button class="btn">Add Currency</button>
+        </div>
+            
+        </div>
+
+    
+</body>
+</html>
